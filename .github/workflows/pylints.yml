@@ -1,4 +1,4 @@
-name: Run Python file and check for pylint errors
+name: pylint errors
 on:
   push:
     branches:
