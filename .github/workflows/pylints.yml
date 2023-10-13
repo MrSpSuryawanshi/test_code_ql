@@ -12,7 +12,7 @@ jobs:
       - name: Install pylint
         run: pip install pylint
       - name: Run pylint
-        run: pylint app.py
+        run: pylint final.py
       - name: Fail if there are pylint errors
         if: ${{ steps.run-pylint.outputs.violations-found > 0 }}
         run: exit 1
