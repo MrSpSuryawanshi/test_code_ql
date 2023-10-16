@@ -1,0 +1,41 @@
+[MASTER]
+load-plugins=function_name_checker
+[FORMAT]
+max-line-length = 100  
+indentation-width = 2
+; this code will not show warrning for long lines, which starts with "https://" 
+ignore-long-lines = '^https?://|\\s+\\#.+$'  
+
+; Customize naming conventions for variables, classes, and methods. For example, to enforce CamelCase for classes:
+const-rgx = '[A-Z_][A-Z1-9_]*$'
+class-rgx = '([A-Z][a-z0-9]+)+$'
+
+[MESSAGES CONTROL]
+; disable = invalid-name, too-many-arguments, 
+; missing-class-docstring, missing-function-docstring
+
+; You can enable or disable specific Pylint error messages. For example, to enable error messages for no-member and unused-argument:
+enable = no-member, unused-argument
+disable = E1120
+
+
+[REPORTS]
+; disable = all
+; enable = error
+; msg-template = "{path}:{line}:{column}: {C}:{msg_id}: {msg}"
+msg-template = "{path}:{line}:{msg}"
+output-format = colorized
+
+; Detect duplicated code using a threshold to identify repeated patterns.
+[CODE-STYLE]
+duplicated-code-fragment-threshold = 5
+
+; Enable checks for unused imports to keep your code clean and efficient.
+; [UNUSED-IMPORTS]
+; always-un-import
+
+; Detect and report unused variables to ensure clean code.
+; [UNNEEDED-VARS]
+; always-un-needed
+
+
