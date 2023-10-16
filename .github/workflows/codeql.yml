@@ -44,4 +44,4 @@ jobs:
       uses: actions/upload-artifact@v2
       with:
         name: codeql-results
-        path: /home/runner/work/new_repo/results/python.sarif
+        path: /home/runner/work/test_code_ql/results/python.sarif
